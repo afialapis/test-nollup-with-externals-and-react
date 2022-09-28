@@ -15,8 +15,8 @@ const Demo = () => {
         We didn't use <i>rollup-plugin-node-externals</i>.
       </div>
       <div>
-        All bundled ok using <b>DevServer API</b>.
-      </div>     
+        All bundled ok using <b>Nollup CLI</b>.
+      </div> 
     </div>
 
   )

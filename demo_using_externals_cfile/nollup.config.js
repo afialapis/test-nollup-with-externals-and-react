@@ -1,5 +1,4 @@
-import NollupDevServer from 'nollup/lib/dev-server.js'
-//import {externals} from 'rollup-plugin-node-externals'
+import {externals} from 'rollup-plugin-node-externals'
 import {babel} from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import replace from '@rollup/plugin-replace'
@@ -8,16 +7,10 @@ import scss from 'rollup-plugin-postcss'
 
 const NODE_ENV = 'development'
 
-const options= {
-  hot: true,
-  port: 7999,
-  contentBase: './demo',
-  verbose: true
-}
-const config= {
-  input: './demo/index.js',
+export default {
+  input: './index.js',
   output: {
-    file: './demo/bundle.js',
+    file: './bundle.js',
     format: 'iife',
     name: 'test-nollup-with-externals-and-react'
   },
@@ -31,15 +24,9 @@ const config= {
       /*https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers*/
       babelHelpers: 'bundled'
     }),
-    //externals(),
+    externals(),
     nodeResolve(),
     commonjs(),
     scss()
   ]
 }
-
-NollupDevServer({
-  ...options,
-  config
-
-})

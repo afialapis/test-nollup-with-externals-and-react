@@ -12,11 +12,11 @@ const Demo = () => {
         Demo is running successfully! 
       </div>
       <div>
-        We didn't use <i>rollup-plugin-node-externals</i>.
+        We are using <i>rollup-plugin-node-externals</i>. React is not included in our bundle.
       </div>
       <div>
-        All bundled ok using <b>DevServer API</b>.
-      </div>     
+        All bundled ok using <b>Nollup CLI</b>.
+      </div>      
     </div>
 
   )

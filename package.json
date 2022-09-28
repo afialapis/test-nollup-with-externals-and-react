@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "demo": "node index.js",
     "demo_no_externals": "node index_no_externals.js",
-    "demo_externals": "node index_using_externals.js",
-    "demo_no_externals_cfile": "node ./node_modules/nollup/lib/cli.js -c ./demo/nollup.config.js --verbose"
+    "demo_using_externals": "node index_using_externals.js",
+    "demo_no_externals_cfile": "node ./node_modules/nollup/lib/cli.js -c ./demo_no_externals_cfile/nollup.config.js --verbose",
+    "demo_using_externals_cfile": "node ./node_modules/nollup/lib/cli.js -c ./demo_using_externals_cfile/nollup.config.js --verbose"
   },
   "repository": {
     "type": "git",
