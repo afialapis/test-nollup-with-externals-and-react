@@ -5,8 +5,8 @@
   "scripts": {
     "demo_no_externals": "node index_no_externals.js",
     "demo_using_externals": "node index_using_externals.js",
-    "demo_no_externals_cfile": "cd demo_no_externals_cfile && nollup -c --verbose",
-    "demo_using_externals_cfile": "cd demo_using_externals_cfile && nollup -c --verbose"
+    "demo_no_externals_cfile": "cd demo_no_externals_cfile && nollup -c --verbose --port 7999",
+    "demo_using_externals_cfile": "cd demo_using_externals_cfile && nollup -c --verbose --port 7999"
   },
   "repository": {
     "type": "git",
